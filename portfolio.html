@@ -4,7 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset styles */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Navigation styles */
+        nav {
+            background: #063256;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            background: #0b6ab3;
+        }
+
+        /* Section styles */
+        .section {
+            scroll-margin-top: 100px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: beige;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            color: rgb(27, 5, 104);
+            margin-bottom: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .card p {
+            color: #000;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        /* h1 style */
+        h1 {
+            color: rgb(27, 5, 104);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 28px;
+            align-items: center;
+        }
+
+        /* flexbox styles to the flex-container */
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        .profile-image {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        /* Paragraph styles */
+        p {
+            font-size: 20px;
+            color: #000;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -16,43 +118,44 @@
             </ul>
         </nav>
         <div class="flex-container">
-        <img class="profile-image" src="img/bonzo.png" alt="my photo" style="width: 300px; height: 300px;">
-        <h1 style="color:rgb(27, 5, 104);">Welcome to my portfolio!</h1>
+            <img class="profile-image" src="img/bonzo.png" alt="my photo" style="width: 300px; height: 300px;">
+            <h1>Welcome to my portfolio!</h1>
         </div>
         <div id="about" class="section">
-            <h2 style="color:rgb(27, 5, 104);">About Me</h2>
-        <div class="card">
-        <p style="color:black;"> Hi, I am <b>Altheamay Timothy Bonzo</b>.I am currently studying in the University of the Cordilleras. 
-        I'm in my 1st year taking the Bachelor of Science in Information Technology, majoring in web technology. Before I graduate 
-        from senior high school, I have already decided to get this course because it's very in demand now a days, and I really 
-        love how technology developed year by year. I am trying my best to be successful and make my parents proud. </p>
-        <br>
-        <p style="color:black; "> I know that nothing is easy in this world so I really expected that I needed more
-        effort to learn programming. My one and only goal is to use my knowledge to developt the technology in our
-        country. I have a lot of dreams and nothing can stop me to achieve it. A little tip to achieve our dreams, 
-        have faith to God and have inspirations in life. </p>
-        <br> 
-        </div>
-            </div>
-            <div id="portfolio" class="section">
-                <h2 style="color:rgb(27, 5, 104); ">Portfolio</h2>
-                <p style="color:black;">I'll share somethings that I learned dor the past months being a student in the University of the Cordilleras.</p>
+            <h2>About Me</h2>
+            <div class="card">
+                <p>Hi, I am <b>Altheamay Timothy Bonzo</b>. I am currently studying in the University of the Cordilleras. 
+                    I'm in my 1st year taking the Bachelor of Science in Information Technology, majoring in web technology. Before I graduate 
+                    from senior high school, I have already decided to get this course because it's very in demand now a days, and I really 
+                    love how technology developed year by year. I am trying my best to be successful and make my parents proud.</p>
                 <br>
-                <h3 style="color:black;">CC1 </h3>
-                <div class="card">
-                <p style="color: black;">CC1 provided a comprehensive overview of <b>computer fundamentals, covering topics such as binary numbers, hardware components, and basic 
+                <p>I know that nothing is easy in this world so I really expected that I needed more
+                effort to learn programming. My one and only goal is to use my knowledge to developt the technology in our
+                country. I have a lot of dreams and nothing can stop me to achieve it. A little tip to achieve our dreams, 
+                have faith to God and have inspirations in life.</p>
+                <br> 
+            </div>
+        </div>
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>I'll share somethings that I learned dor the past months being a student in the University of the Cordilleras.</p>
+            <br>
+            <h3>CC1</h3>
+            <div class="card">
+                <p>CC1 provided a comprehensive overview of <b>computer fundamentals, covering topics such as binary numbers, hardware components, and basic 
                     programming concepts</b>. This course really amazed me more because I can easily understand the lessons and easily apply what is being thought to us.
                     <br>
                     Our professor that time is very kind and helpful. What I learned are the <b>number systems</b> provide various ways to represent numbers, while operations on 
                     them involve manipulating these representations, crucial in fields like computing and mathematics. And <b>HTML</b> is essential for anyone interested in web 
                     development, as it serves as the foundation for <b>building web pages</b> and is often combined with other technologies like <b>CSS (Cascading Style Sheets) 
                     and JavaScript</b> to create dynamic and visually appealing websites. So I used it by making my own online portfolio. Then about <b>informations</b>, the 
-                    context of communication, information is a representation of data that conveys meaning, reducing uncertainty by transmitting from the sender to the receiver."</p>
-                    <br>
-                </div>
-                <h3 style="color:black;">CC2 </h3>
-                <div class="card">
-                <p style="color:black;"> CC2 introduced me to the world of programming through <b>Python</b>, a <i>versatile and beginner-friendly language</i>. Throughout the course, I gained 
+                    context of communication, information is a representation of data that conveys meaning, reducing uncertainty by transmitting from the sender to the receiver.
+                </p>
+                <br>
+            </div>
+            <h3>CC2</h3>
+            <div class="card">
+                <p>CC2 introduced me to the world of programming through <b>Python</b>, a <i>versatile and beginner-friendly language</i>. Throughout the course, I gained 
                     proficiency in writing simple programs, learning essential concepts such as variables, data types, loops, conditionals, and functions. This foundation in Python 
                     programming has empowered me to tackle various computational tasks and problem-solving challenges.
                     <br>
@@ -60,8 +163,11 @@
                     very first language I learned beside html, it's the Python language. At first It's very tough but after learning futher, it amazed me and it's exciting
                     while doing it. Our professor is very helpful too because she guidied us and give tips for doing the program, which is their are <b>inputs, outputs, and 
                     decision control structures</b>. And the very difficult thing are the loop, which is the <b>repetition control structures</b>. It's a difficult months but 
-                    I managed by the help of my professor, classmates who are advanced than me and youtube. </p>
-                    <br>
+                    I managed by the help of my professor, classmates who are advanced than me and youtube.
+                </p>
+                <br>
+            </div>
+               <br>
                 </div>
                 <h3 style="color:black;">CC3 </h3>
                 <div class="card">
@@ -108,15 +214,15 @@
                     This course is an exciting course because we experienced how to interview an owner of an business and we created diagrams to see easily the things that we needed to change in a 
                     company to make it a better company. </p>
                 </div>
-            <div id="contact" class="section"> 
-                <h2 style="color:rgb(27, 5, 104); ">Contacts</h2>
-                <div class="card">
+        </div>
+        <div id="contact" class="section"> 
+            <h2>Contacts</h2>
+            <div class="card">
                 <p>Feel free to contact me with any questions or inquiries.</p>
-                    <ul>
-                        <li><b>Email:</b> tiya0618tim@gmail.com</li>
-                        <li><b>Phone:</b> +639764371872</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><b>Email:</b> tiya0618tim@gmail.com</li>
+                    <li><b>Phone:</b> +639764371872</li>
+                </ul>
             </div>
         </div>
     </div>
